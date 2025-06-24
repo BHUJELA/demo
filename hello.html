@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Type Selector */
+        img{
+            width: 20;
+            border-radius: 30px;
+        }
+        /* Class Selector */
+        .card {
+            border: 1px solid rgb(54, 52, 52);
+            border-radius: 10px;
+            padding: 36px;
+            margin: 16px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(246, 4, 4, 0.1);
+        }
+        /* Descendant Selector */
+        .card .card-title {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        /* Child Selector */
+        .card > .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        /* Grouping Selector */
+        .card-role, .card-prize {
+            color: rgb(199, 75, 75);
+            font-style: italic;
+            margin: 8px 0;
+        }
+        /* Pseudo-class Selector */
+        .btn:hover{
+            background-color: blueviolet;
+        }
+        /* Card Selector */
+        .student-card {
+           background-color: antiquewhite;
+        }
+        /* Card Selector */
+        .product-card {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="card student-card">
+        <img src="Resources/a.jpg" alt="Student photo" class="card-img">
+        <h2 class="card-title">Binit Gurung</h2>
+        <p class="card-role">Class 10 - DBMS</p>
+        <a href="#" class="btn view-profile">View-profile</a>
+    </div>
+
+    <div class="card product-card">
+     <img src="Resources/b.jpg" alt="Shoes" class="card-img" >
+     <h2 class="card-title">Sports shors</h2>
+     <p class="card-price">$29.19</p>
+     <a href="#" class="btn add-to-cart">Add to card</a>
+    </div>
+      
+    
+</body>
+</html>
